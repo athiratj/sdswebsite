@@ -1,0 +1,294 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato-regular", sans-serif;
+  color: #505962;
+  background-color: #b2dfdb;
+}
+h1,
+h2,
+h3,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+.offset::before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+/*parasite*/
+.c {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+  }
+
+
+/*  Navigation  */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: #1ebba3 !important;
+}
+.navbar-brand img {
+  height: 2rem;
+}
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #505962;
+}
+
+/* home */
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+}
+
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+.caption h6 {
+  font-family: "Lato-regular", sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+}
+.btn-lg:hover {
+  background-color: #189582;
+  border-color: #189582;
+  color: white;
+}
+
+/* About */
+.head{
+    padding:3rem auto;
+    text-align: center;
+    padding-bottom:2rem;
+}
+
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+  
+}
+
+/* Activities */
+
+.jumbotron {
+  margin-bottom: 0;
+  padding: 12rem 2rem;
+  border-radius: 0;
+}
+h2.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #1ebba3;
+  margin: 0 auto 2rem;
+}
+.actv svg.svg-inline--fa {
+  color: #1ebba3;
+}
+.actv h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+}
+.actv p {
+  font-size: 1.1rem;
+}
+
+/*swiper*/
+.swiper-body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 280px;
+  background: #fff;
+}
+.swiper-slide .imgBx{
+    width:100%;
+    overflow:hidden;
+}
+.swiper-slide .imgBx img{
+    width:100%;
+
+}
+.swiper-slide .details{
+    box-sizing: border-box;
+    font-size: 20px;
+    padding:20px;
+}
+.swiper-slide .details h3{
+    margin:0;
+    padding:0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    color:#607d8b;
+}
+
+  
+
+/*contact*/
+#contact {
+  background: #f7f7f7;
+  padding: 0;
+}
+#contact .narrow {
+  width: 75%;
+  margin: 1rem auto;
+  padding: 1.2rem;
+}
+#contact .form #sendmessage {
+  color: #1ebba3;
+  border: 1px solid #1ebba3;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show,
+#contact .form #errormessage.show,
+#contact .form .show {
+  display: block;
+}
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+#contact .form input,
+#contact .form textarea {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#contact .form button[type="submit"] {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  margin: 1rem;
+  color: white;
+  opacity: 0.8;
+  background-color: #1ebba3;
+  border-color: #1ebba3;
+}
+#contact .form button[type="submit"]:hover {
+  background-color: #189582;
+  border-color: #189582;
+  opacity: 1;
+}
+
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem 2rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+  color: #1ebba3 !important;
+}
+footer .socket {
+  color: #1ebba3;
+}
+hr.socket {
+  width: 100%;
+  border-top: 0.2rem solid#666b71;
+  margin-top: 3rem;
+}
+footer .copy {
+  font-size: small;
+}
+/*mobile*/
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+  .caption h6 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+

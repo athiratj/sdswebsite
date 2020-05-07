@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Developers Society</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" /> 
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-spy="scroll" data-target="#navbarResponsive">
+    <!--parasite-->
+    <canvas id="c" ></canvas>
+    <script src="https://cdn.jsdelivr.net/gh/anuraghazra/Verly.js@1.2.0/dist/verly.bundle.js"></script>
+    <script src="./src/Tail.js"></script>
+    <script src="./src/Boid.js"></script>
+    <script src="./src/Flock.js"></script>
+    <script src="./index.js"></script>
+<!--home-->
+    <header id="home">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png" width="100" height="30" alt="SDS logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#c">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#actvs">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#coc">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="caption text-center">
+      <h4>Welcome to</h4>
+      <h1>Student Developers Society</h1>
+      <h6>A vibrant community of student developers and professionals.</h6>
+      <a class="btn btn-outline-light btn-lg" href="#about">Learn More</a>
+    </div>
+<!--about-->
+    <section id="about" class="offset">
+      <div class="col-8 narrow text-center">
+        <div class="head">
+          <h2 class="heading">Who are we?</h2>
+          <div class="heading-underline"></div>
+        </div>
+        <img class="img-fluid" src="img/about.png" alt="">
+        <p>
+          We are a community with a vision to bridge the gap between students
+          and professionals. Our mission is to make students industry ready by
+          helping them achieve professionalism. We actively conduct workshops
+          and interactive sessions to help aid us in fulfilling our mission. We
+          were one of the organizing communities of the first ever Rails Girls
+          Kochi workshop along with Kerala Ruby Community. We are turning a year
+          old and so far, the journey has been sweet.
+        </p>
+      </div>
+    </section>
+<!--activities-->
+    <section id="actvs" class="offset">
+      <div class="jumbotron">
+        <div class="row text-center">
+          <div class="col-12 head">
+            <h2 class="heading">What we do</h2>
+            <div class="heading-underline"></div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="actv">
+              <i
+                class="fas fa-comments fa-3x"
+                dat-fa-transform="shrink-3 up-5"
+              ></i>
+              <h3>Networking</h3>
+              <p>
+                Participate in meetups and workshops conducted in association
+                with different communities to get to know interesting people
+                while picking up new skills along the way.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="actv">
+              <i
+                class="fab fa-firefox fa-3x"
+                dat-fa-transform="shrink-3 up-5"
+              ></i>
+              <h3>Open Source Dev</h3>
+              <p>
+                We are advocates of open source. Join us in events like Open
+                Source Kerala to learn some interesting stuff about open source
+                and be a part of other cool communities as well.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="actv">
+              <i
+                class="fas fa-handshake fa-3x"
+                dat-fa-transform="shrink-3 up-5"
+              ></i>
+              <h3>Meetups</h3>
+              <p>
+                Get involved in meetups of a wonderful community of developers
+                and aspiring developers to share ideas and to know about the
+                best practices in the development world.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="actv">
+              <i
+                class="fas fa-user-graduate fa-3x"
+                dat-fa-transform="shrink-3 up-5"
+              ></i>
+              <h3>Create Skill</h3>
+              <p>
+                Join in on our workshops, talks, interactive sessions and a lot
+                more to pick up a new skill or to enhance your skill through our
+                well educated instructors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper -->
+   
+    <section class="swiper-container swiper-body">
+      <div class="col-12 head">
+        <h2 class="heading">At a Glance</h2>
+        <div class="heading-underline"></div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/1event.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Event<br />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/1event2.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Event<br />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/1event3.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Event<br />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/1event4.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Event<br />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/1rr.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Event<br />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/12event3.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Event<br />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/01-team1.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Team</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/02-team1.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Team</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/03-team1.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Team</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/team34.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Team</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/1team7.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Team</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="img/1rr34.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Misc</h3>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    
+  </section>
+<!-- Join-->
+
+<section id="contact" class="offset">
+  <div class="row justify-content-center">
+    <div class="col-12 narrow text-center head">
+      <h2 class="heading">Get In Touch</h2>
+      <div class="heading-underline"></div>
+    </div>
+    <div class="col-lg-4 col-md-6 text-center">
+      <div class="form">
+        <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <div id="errormessage"></div>
+        <form action="" method="post" role="form" class="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+              data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars"
+            />
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              data-rule="email"
+              data-msg="Please enter a valid email"
+            />
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              data-rule="minlen:4"
+              data-msg="Please enter at least 8 chars of subject"
+            />
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              name="message"
+              rows="5"
+              data-rule="required"
+              data-msg="Please write something for us"
+              placeholder="Message"
+            ></textarea>
+            <div class="validation"></div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-secondary" type="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<!--footer-->
+  <footer>
+    <div class="row justify-content-center">
+      <div class="col-md-5 text text-center">
+        <h6><strong>Contact Info</strong></h6>
+        <a href="#" target="_blank"><i class="fab fa-meetup fa-3x"></i></a>
+        <a href="#" target="_blank"
+          ><i
+            class="fab fa-twitter fa-3x"
+            dat-fa-transform="shrink-4.5 up-5"
+          ></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fab fa-facebook-f fa-3x"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fab fa-linkedin-in fa-3x"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fab fa-gitlab fa-3x"></i></a>
+        <a href="#" target="_blank"
+          ><i class="fab fa-telegram-plane fa-3x"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fab fa-instagram fa-3x"></i
+        ></a>
+      </div>
+
+      <hr class="socket" />
+      <div class="copy">
+        &copy Copyright 2020 | Made with ❤ by Athira T J
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+    <!--- Script Source Files -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+  </body>
+</html>
