@@ -1,12 +1,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 
+
+/*parasite*/
+.c {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Lato-regular", sans-serif;
   color: #505962;
   background-color: #b2dfdb;
 }
+
 h1,
 h2,
 h3,
@@ -20,13 +29,6 @@ h6 {
   height: 4rem;
   margin-top: -4rem;
 }
-
-/*parasite*/
-.c {
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-  }
 
 
 /*  Navigation  */
@@ -186,6 +188,9 @@ h2.heading {
 #contact {
   background: #f7f7f7;
   padding: 0;
+}
+#contact .form{
+  padding:1rem;
 }
 #contact .narrow {
   width: 75%;
